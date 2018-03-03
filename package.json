@@ -1,0 +1,12 @@
+{
+  "name": "vue-fun-loading",
+  "version": "0.0.3",
+  "description": "a vue loading components",
+  "private": false,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ghy <guohy7@gmail.com>",
+  "license": "MIT"
+}
