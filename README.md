@@ -1,8 +1,4 @@
 # vue-fun-loading
-a vue loading components
-
-
-# vue-cute-rate
 
 [![NPM version](https://img.shields.io/npm/v/vue-fun-loading.svg?style=flat)](https://npmjs.com/package/vue-fun-loading)
 
