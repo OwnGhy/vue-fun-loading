@@ -43,7 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px auto;
+    margin: 0px auto;
     &.loading-circle-small {
       width: 50px;
       height: 50px;
