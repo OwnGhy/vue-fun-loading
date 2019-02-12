@@ -4,6 +4,8 @@
 
 A fun vue loading components.
 
+CDN: [UNPKG](https://unpkg.com/vue-fun-loading/) | [jsDelivr](https://cdn.jsdelivr.net/npm/vue-fun-loading/)
+
 ## Install
 
 ```bash
@@ -35,7 +37,12 @@ Then you can use vue-fun-loading anywhere.
 </template>
 ```
 
-CDN: [UNPKG](https://unpkg.com/vue-fun-loading/) | [jsDelivr](https://cdn.jsdelivr.net/npm/vue-fun-loading/)
+## API
+| Property | Description | type | Default | Enum |
+| -------- | ----------- | ---- | ------- | ---- |
+| size | this property defines loading component's size | string | 'middle' | 'small', 'middle', 'large' |
+| color | loading component's color | string | '#ff69b4' | any color in 16 bit rgb format |
+| type | loading type of different style | string | 'circle-dot' | explain in demo |
 
 ## Notification
 This tool is aim for summarizing loading and learning how to build a vue components.
