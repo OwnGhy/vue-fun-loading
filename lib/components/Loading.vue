@@ -23,7 +23,7 @@ export default {
     type: {
       type: String,
       default: 'circle-dot',
-      elem: ['circle-dot', 'circle-quarter']
+      elem: ['circle-dot', 'circle-quarter', 'circle-dot-moving', 'circle-gradient', 'circle-line']
     }
   },
   methods: {
