@@ -7,12 +7,18 @@
 </template>
 <script>
 import LoadingCircleDot from './LoadingCircleDot';
+import LoadingCircleDotMoving from './LoadingCircleDotMoving';
+import LoadingCircleGradient from './LoadingCircleGradient';
+import LoadingCircleLine from './LoadingCircleLine';
 import LoadingCircleQuarter from './LoadingCircleQuarter';
 
 export default {
     name: 'VueFunLoading',
     components: {
         LoadingCircleDot,
+        LoadingCircleDotMoving,
+        LoadingCircleGradient,
+        LoadingCircleLine,
         LoadingCircleQuarter
     },
     props: {

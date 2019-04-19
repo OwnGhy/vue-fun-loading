@@ -6,6 +6,8 @@ A fun vue loading components.
 
 CDN: [UNPKG](https://unpkg.com/vue-fun-loading/) | [jsDelivr](https://cdn.jsdelivr.net/npm/vue-fun-loading/)
 
+[DEMO](https://vue-fun-loading.netlify.com/)
+
 ## Install
 
 ```bash
