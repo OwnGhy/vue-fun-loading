@@ -1,31 +1,34 @@
 <template>
-  <div :class="`fun-loading-circle-gradient fun-loading-circle-gradient-${size}`" :style="loadingStyle">
-    <div></div>
+  <div
+    :class="`fun-loading-circle-gradient fun-loading-circle-gradient-${size}`"
+    :style="loadingStyle"
+  >
+    <div />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'fun-loading-circle-gradient',
-  props: {
-    color: {
-      type: String,
-      default: '#ff69b4'
+    name: 'FunLoadingCircleGradient',
+    props: {
+        color: {
+            type: String,
+            default: '#ff69b4'
+        },
+        size: {
+            type: String,
+            default: 'middle',
+            elem: ['small', 'middle', 'large']
+        }
     },
-    size: {
-      type: String,
-      default: 'middle',
-      elem: ['small', 'middle', 'large']
+    computed: {
+        loadingStyle () {
+            return {
+                background: `linear-gradient(${this.color}, rgba(0, 0, 0, 0))`
+            };
+        }
     }
-  },
-  computed: {
-    loadingStyle () {
-      return {
-        background: `linear-gradient(${this.color}, rgba(0, 0, 0, 0))`
-      }
-    }
-  }
-}
+};
 </script>
 
 <style lang="less">
