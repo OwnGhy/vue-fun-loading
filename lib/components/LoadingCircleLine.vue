@@ -1,31 +1,36 @@
 <template>
-  <div :class="`fun-loading-circle-line fun-loading-circle-line-${this.size}`" >
-    <span v-for="i in 8" :key="i" :id="`idid${i}`" :style="loadingStyle"></span>
+  <div :class="`fun-loading-circle-line fun-loading-circle-line-${this.size}`">
+    <span
+      v-for="i in 8"
+      :id="`idid${i}`"
+      :key="i"
+      :style="loadingStyle"
+    />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'loading-circle-line',
-  props: {
-    color: {
-      type: String,
-      default: '#ff69b4'
+    name: 'LoadingCircleLine',
+    props: {
+        color: {
+            type: String,
+            default: '#ff69b4'
+        },
+        size: {
+            type: String,
+            default: 'middle',
+            elem: ['small', 'middle', 'large']
+        }
     },
-    size: {
-      type: String,
-      default: 'middle',
-      elem: ['small', 'middle', 'large']
+    computed: {
+        loadingStyle () {
+            return {
+                backgroundColor: this.color
+            };
+        }
     }
-  },
-  computed: {
-    loadingStyle () {
-      return {
-        backgroundColor: this.color
-      }
-    }
-  }
-}
+};
 </script>
 
 <style lang="less">

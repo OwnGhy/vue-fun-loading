@@ -1,31 +1,34 @@
 <template>
-  <span :class="`fun-loading-circle fun-loading-circle-${this.size}`" :style="loadingStyle"></span>
+  <span
+    :class="`fun-loading-circle fun-loading-circle-${this.size}`"
+    :style="loadingStyle"
+  />
 </template>
 
 <script>
-import { LightenDarkenColor } from './../utils'
+import { LightenDarkenColor } from './../utils';
 export default {
-  name: 'fun-loading-circle-quarter',
-  props: {
-    size: {
-      type: String,
-      default: 'middle',
-      elem: ['small', 'middle', 'large']
+    name: 'FunLoadingCircleQuarter',
+    props: {
+        size: {
+            type: String,
+            default: 'middle',
+            elem: ['small', 'middle', 'large']
+        },
+        color: {
+            type: String,
+            default: '#ff69b4'
+        }
     },
-    color: {
-      type: String,
-      default: '#ff69b4'
+    computed: {
+        loadingStyle () {
+            return {
+                borderColor: `${LightenDarkenColor(this.color, 30)}`,
+                borderRightColor: `${this.color}`
+            };
+        }
     }
-  },
-  computed: {
-    loadingStyle () {
-      return {
-        borderColor: `${LightenDarkenColor(this.color, 30)}`,
-        borderRightColor: `${this.color}`
-      }
-    }
-  }
-}
+};
 </script>
 
 <style lang="less" scoped>

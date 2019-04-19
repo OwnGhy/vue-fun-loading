@@ -1,30 +1,35 @@
 <template>
-  <div :class="`fun-loading-circle-dot-moving fun-loading-circle-dot-moving-${this.size}`" >
-    <div v-for="i in 4" :key="i"><span :style="loadingStyle" /></div>
+  <div :class="`fun-loading-circle-dot-moving fun-loading-circle-dot-moving-${this.size}`">
+    <div
+      v-for="i in 4"
+      :key="i"
+    >
+      <span :style="loadingStyle" />
+    </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'fun-loading-circle-dot-moving',
-  props: {
-    color: {
-      type: String,
-      default: '#ff69b4'
+    name: 'FunLoadingCircleDotMoving',
+    props: {
+        color: {
+            type: String,
+            default: '#ff69b4'
+        },
+        size: {
+            type: String,
+            default: 'middle',
+            elem: ['small', 'middle', 'large']
+        }
     },
-    size: {
-      type: String,
-      default: 'middle',
-      elem: ['small', 'middle', 'large']
+    computed: {
+        loadingStyle () {
+            return {
+                backgroundColor: this.color
+            };
+        }
     }
-  },
-  computed: {
-    loadingStyle () {
-      return {
-        backgroundColor: this.color
-      }
-    }
-  }
-}
+};
 </script>
 <style lang="less">
   @import "./style/_variables.less";

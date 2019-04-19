@@ -2,40 +2,54 @@
   "name": "vue-fun-loading",
   "description": "all kinds of loading components of vue",
   "version": "0.1.0",
-  "author": "guohongying <guohongying@nibirutech.com>",
   "license": "MIT",
   "private": false,
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
-  },
   "main": "dist/vue-fun-loading.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.config.dev.js --open",
+    "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.config.pro.js",
+    "lib": "cross-env NODE_ENV=production webpack --config ./build/webpack.config.lib.js",
+    "lint": "eslint --ext .js,.vue src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "files": [
     "dist",
     "lib"
   ],
-  "dependencies": {
-    "vue": "^2.5.11"
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
   ],
+  "keywords": [
+    "blog",
+    "guohongying"
+  ],
+  "author": "OwnGhy <919986426@qq.com>",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-3": "^6.24.1",
-    "cross-env": "^5.0.5",
-    "css-loader": "^0.28.7",
-    "file-loader": "^1.1.4",
+    "babel-eslint": "^10.0.1",
+    "clean-webpack-plugin": "^2.0.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-vue": "^2.0.2",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
-    "style-loader": "^0.23.1",
-    "vue-loader": "https://github.com/graux/vue-loader#a0d6b77",
-    "vue-template-compiler": "^2.4.4",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^3.1.11"
+    "url-loader": "^1.1.2",
+    "vue": "^2.6.10",
+    "vue-fun-loading": "^0.1.0",
+    "vue-loader": "^14.2.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1",
+    "webpack-merge": "^4.2.1"
   }
 }
