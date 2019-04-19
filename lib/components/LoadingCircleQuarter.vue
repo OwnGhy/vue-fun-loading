@@ -23,7 +23,7 @@ export default {
     computed: {
         loadingStyle () {
             return {
-                borderColor: `${LightenDarkenColor(this.color, 30)}`,
+                borderColor: `${LightenDarkenColor(this.color, 40)}`,
                 borderRightColor: `${this.color}`
             };
         }
