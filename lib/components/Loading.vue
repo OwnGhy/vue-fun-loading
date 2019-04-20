@@ -11,6 +11,8 @@ import LoadingCircleDotMoving from './LoadingCircleDotMoving';
 import LoadingCircleGradient from './LoadingCircleGradient';
 import LoadingCircleLine from './LoadingCircleLine';
 import LoadingCircleQuarter from './LoadingCircleQuarter';
+import LoadingWord from './LoadingWord';
+import LoadingWordCover from './LoadingWordCover';
 
 export default {
     name: 'VueFunLoading',
@@ -19,7 +21,9 @@ export default {
         LoadingCircleDotMoving,
         LoadingCircleGradient,
         LoadingCircleLine,
-        LoadingCircleQuarter
+        LoadingCircleQuarter,
+        LoadingWord,
+        LoadingWordCover
     },
     props: {
         size: {
@@ -33,7 +37,7 @@ export default {
         type: {
             type: String,
             default: 'circle-dot',
-            elem: ['circle-dot', 'circle-quarter', 'circle-dot-moving', 'circle-gradient', 'circle-line']
+            elem: ['circle-dot', 'circle-quarter', 'circle-dot-moving', 'circle-gradient', 'circle-line', 'word', 'word-cover']
         }
     },
     methods: {
