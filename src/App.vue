@@ -45,7 +45,6 @@
         />
         <vue-fun-loading
           slot="demo-8"
-          size="large"
           type="word-border-bounce"
         />
       </juri>
