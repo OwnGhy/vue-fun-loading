@@ -69,40 +69,34 @@
     position: relative;
     margin: 0 auto;
 
-    .@{loading-class}-small {
+    &.@{loading-class}-small {
       width: 75px;
+      &:after {
+        .word-after(16px, 12px, 400);
+      }
+      &:before {
+         .word-before(22px, -3px, load_with_word_small);
+      }
     }
 
-    &.@{loading-class}-small:after {
-      .word-after(16px, 12px, 400);
-    }
-
-    &.@{loading-class}-small:before {
-      .word-before(22px, -3px, load_with_word_small);
-    }
-
-    .@{loading-class}-middle {
+    &.@{loading-class}-middle {
       width: 112.5px;
+      &:after {
+        .word-after(20px, 14px, 400);
+      }
+      &:before {
+        .word-before(26px, -3px, load_with_word_middle);
+      }
     }
 
-    &.@{loading-class}-middle:after {
-      .word-after(20px, 14px, 400);
-    }
-
-    &.@{loading-class}-middle:before {
-      .word-before(26px, -3px, load_with_word_middle);
-    }
-
-    .@{loading-class}-large {
+    &.@{loading-class}-large {
       width: 150px;
-    }
-
-    &.@{loading-class}-large:after {
-      .word-after(24px, 16px, 500);
-    }
-
-    &.@{loading-class}-large:before {
-      .word-before(30px, -3px, load_with_word_large);
+      &:after {
+        .word-after(24px, 16px, 500);
+      }
+      &:before {
+        .word-before(30px, -3px, load_with_word_large);
+      }
     }
 
     .animation-common(@width) {
