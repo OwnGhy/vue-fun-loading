@@ -43,6 +43,11 @@
           slot="demo-7"
           type="word-cover"
         />
+        <vue-fun-loading
+          slot="demo-8"
+          size="large"
+          type="word-border-bounce"
+        />
       </juri>
     </div>
   </div>
@@ -59,6 +64,7 @@
   import circledotcolor from 'raw-loader!./docs/circledotcolor.md';
   import word from 'raw-loader!./docs/word.md';
   import wordcover from 'raw-loader!./docs/wordcover.md';
+  import wordborderbounce from 'raw-loader!./docs/wordborderbounce.md';
 
   export default {
     name: 'vue-fun-loading-demo',
@@ -77,7 +83,8 @@
           circleline,
           circlequarter,
           word,
-          wordcover
+          wordcover,
+          wordborderbounce
         ]
       };
     }
