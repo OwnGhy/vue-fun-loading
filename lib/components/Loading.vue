@@ -10,7 +10,16 @@ import LoadingCircleDot from './LoadingCircleDot';
 import LoadingCircleDotMoving from './LoadingCircleDotMoving';
 import LoadingCircleGradient from './LoadingCircleGradient';
 import LoadingCircleLine from './LoadingCircleLine';
+import LoadingCircleHalf from './LoadingCircleHalf';
 import LoadingCircleQuarter from './LoadingCircleQuarter';
+import LoadingCircleToDot from './LoadingCircleToDot';
+import LoadingCircleToDash from './LoadingCircleToDash';
+import LoadingCircleRidge from './LoadingCircleRidge';
+import LoadingDot from './LoadingDot';
+import LoadingDotShrink from './LoadingDotShrink';
+import LoadingDotMoving from './LoadingDotMoving';
+import LoadingDotSquare from './LoadingDotSquare';
+import LoadingDotSquareShrink from './LoadingDotSquareShrink';
 import LoadingWord from './LoadingWord';
 import LoadingWordCover from './LoadingWordCover';
 import LoadingWordBorderBounce from './LoadingWordBorderBounce';
@@ -22,7 +31,16 @@ export default {
         LoadingCircleDotMoving,
         LoadingCircleGradient,
         LoadingCircleLine,
+        LoadingCircleHalf,
         LoadingCircleQuarter,
+        LoadingCircleToDot,
+        LoadingCircleToDash,
+        LoadingCircleRidge,
+        LoadingDot,
+        LoadingDotShrink,
+        LoadingDotMoving,
+        LoadingDotSquare,
+        LoadingDotSquareShrink,
         LoadingWord,
         LoadingWordCover,
         LoadingWordBorderBounce
@@ -41,7 +59,16 @@ export default {
             default: 'circle-dot',
             elem: [
               'circle-dot',
+              'circle-half',
               'circle-quarter',
+              'circle-to-dot',
+              'circle-to-dash',
+              'circle-ridge',
+              'dot',
+              'dot-shrink',
+              'dot-moving',
+              'dot-square',
+              'dot-square-shrink',
               'circle-dot-moving',
               'circle-gradient',
               'circle-line',
