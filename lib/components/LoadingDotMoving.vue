@@ -1,11 +1,11 @@
 <template>
-  <div :class="`fun-loading-dot-square fun-loading-dot-square-${size}`" :style="loadingStyle">
+  <div :class="`fun-loading-dot-moving fun-loading-dot-moving-${size}`" :style="loadingStyle">
     <span v-for="item in [1, 2, 3, 4, 5]" :key="item"></span>
   </div>
 </template>
 <script>
   export default {
-    name: 'FunLoadingDotSquare',
+    name: 'FunLoadingDotMoving',
     props: {
       size: {
         type: String,
@@ -29,14 +29,14 @@
 <style lang="less">
   @import "./style/_variables.less";
 
-  @loading-class: @{fun-loading-prefix}-dot-square;
+  @loading-class: @{fun-loading-prefix}-dot-moving;
 
   .@{loading-class} {
     > span {
       display: inline-block;
+      border-radius: 50%;
       background: @fun-loading-color;
-      animation: dot_square 1.04s ease infinite;
-      transform-origin: right bottom;
+      animation: dot_opacity_moving 2.04s ease infinite;
 
       &:nth-child(1) {
         animation-delay: .13s;
@@ -84,14 +84,18 @@
     }
 
 
-    @keyframes dot_square {
+    @keyframes dot_opacity_moving {
       0%{
         opacity: 1;
-        transform: rotate(0);
+        transform: translate(0);
+      }
+      50%{
+        opacity: 0;
+        transform: translate(120px);
       }
       100%{
-        opacity: 0;
-        transform: rotate(90deg);
+        opacity: 1;
+        transform: translate(0);
       }
     }
   }
