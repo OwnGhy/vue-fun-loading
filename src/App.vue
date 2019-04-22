@@ -45,14 +45,22 @@
         />
         <vue-fun-loading
           slot="demo-8"
-          type="word"
+          type="circle-to-dash"
         />
         <vue-fun-loading
           slot="demo-9"
-          type="word-cover"
+          type="circle-ridge"
         />
         <vue-fun-loading
           slot="demo-10"
+          type="word"
+        />
+        <vue-fun-loading
+          slot="demo-11"
+          type="word-cover"
+        />
+        <vue-fun-loading
+          slot="demo-12"
           type="word-border-bounce"
         />
       </juri>
@@ -70,6 +78,8 @@
   import circlehalf from 'raw-loader!./docs/circlehalf.md';
   import circlequarter from 'raw-loader!./docs/circlequarter.md';
   import circletodot from 'raw-loader!./docs/circletodot.md';
+  import circletodash from 'raw-loader!./docs/circletodash.md';
+  import circleridge from 'raw-loader!./docs/circleridge.md';
   import circledotcolor from 'raw-loader!./docs/circledotcolor.md';
   import word from 'raw-loader!./docs/word.md';
   import wordcover from 'raw-loader!./docs/wordcover.md';
@@ -93,6 +103,8 @@
           circlehalf,
           circlequarter,
           circletodot,
+          circletodash,
+          circleridge,
           word,
           wordcover,
           wordborderbounce

@@ -1,9 +1,9 @@
 <template>
-  <div :class="`fun-loading-circle-to-dot fun-loading-circle-to-dot-${size}`" :style="loadingStyle"></div>
+  <div :class="`fun-loading-circle-ridge fun-loading-circle-ridge-${size}`" :style="loadingStyle"></div>
 </template>
 <script>
   export default {
-    name: 'FunLoadingCircleToDot',
+    name: 'FunLoadingCircleRidge',
     props: {
       size: {
         type: String,
@@ -27,39 +27,34 @@
 <style lang="less">
   @import "./style/_variables.less";
 
-  @loading-class: @{fun-loading-prefix}-circle-to-dot;
+  @loading-class: @{fun-loading-prefix}-circle-ridge;
 
   .@{loading-class} {
+    width: 0;
+    height: 0;
     border-radius: 50%;
-    border-style: solid;
+    border-style: ridge;
     border-color: @fun-loading-color @fun-loading-light-color;
-    animation: rotate_to_dot 1.5s infinite;
+    animation: rotate_ridge 1.5s infinite;
 
     &.@{loading-class}-small {
-      width: 12px;
-      height: 12px;
-      border-width: 6px;
+      border-width: 10px;
     }
 
     &.@{loading-class}-middle {
-      width: 18px;
-      height: 18px;
-      border-width: 9px;
+      border-width: 18px;
     }
 
     &.@{loading-class}-large {
-      width: 26px;
-      height: 26px;
-      border-width: 12px;
+      border-width: 25px;
     }
 
-    @keyframes rotate_to_dot {
+    @keyframes rotate_ridge {
       50%{
         transform:rotate(180deg) scale(1.3);
-        border-style:dotted;
       }
       100%{
-        transform:rotate(360deg) scale(1);
+        transform:rotate(360deg) scale(0.9);
       }
     }
   }
