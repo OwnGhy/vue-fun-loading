@@ -33,18 +33,22 @@
         />
         <vue-fun-loading
           slot="demo-5"
-          type="circle-quarter"
+          type="circle-half"
         />
         <vue-fun-loading
           slot="demo-6"
-          type="word"
+          type="circle-quarter"
         />
         <vue-fun-loading
           slot="demo-7"
-          type="word-cover"
+          type="word"
         />
         <vue-fun-loading
           slot="demo-8"
+          type="word-cover"
+        />
+        <vue-fun-loading
+          slot="demo-9"
           type="word-border-bounce"
         />
       </juri>
@@ -59,6 +63,7 @@
   import circledotmoving from 'raw-loader!./docs/circledotmoving.md';
   import circlegradient from 'raw-loader!./docs/circlegradient.md';
   import circleline from 'raw-loader!./docs/circleline.md';
+  import circlehalf from 'raw-loader!./docs/circlehalf.md';
   import circlequarter from 'raw-loader!./docs/circlequarter.md';
   import circledotcolor from 'raw-loader!./docs/circledotcolor.md';
   import word from 'raw-loader!./docs/word.md';
@@ -80,6 +85,7 @@
           circledotmoving,
           circlegradient,
           circleline,
+          circlehalf,
           circlequarter,
           word,
           wordcover,
