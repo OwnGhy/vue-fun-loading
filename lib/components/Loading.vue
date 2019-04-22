@@ -12,6 +12,7 @@ import LoadingCircleGradient from './LoadingCircleGradient';
 import LoadingCircleLine from './LoadingCircleLine';
 import LoadingCircleHalf from './LoadingCircleHalf';
 import LoadingCircleQuarter from './LoadingCircleQuarter';
+import LoadingCircleToDot from './LoadingCircleToDot';
 import LoadingWord from './LoadingWord';
 import LoadingWordCover from './LoadingWordCover';
 import LoadingWordBorderBounce from './LoadingWordBorderBounce';
@@ -25,6 +26,7 @@ export default {
         LoadingCircleLine,
         LoadingCircleHalf,
         LoadingCircleQuarter,
+        LoadingCircleToDot,
         LoadingWord,
         LoadingWordCover,
         LoadingWordBorderBounce
@@ -45,6 +47,7 @@ export default {
               'circle-dot',
               'circle-half',
               'circle-quarter',
+              'circle-to-dot',
               'circle-dot-moving',
               'circle-gradient',
               'circle-line',
