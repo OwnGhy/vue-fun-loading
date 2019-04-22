@@ -61,18 +61,26 @@
         />
         <vue-fun-loading
           slot="demo-12"
-          type="dot-square"
+          type="dot-moving"
         />
         <vue-fun-loading
           slot="demo-13"
-          type="word"
+          type="dot-square"
         />
         <vue-fun-loading
           slot="demo-14"
-          type="word-cover"
+          type="dot-square-shrink"
         />
         <vue-fun-loading
           slot="demo-15"
+          type="word"
+        />
+        <vue-fun-loading
+          slot="demo-16"
+          type="word-cover"
+        />
+        <vue-fun-loading
+          slot="demo-17"
           type="word-border-bounce"
         />
       </juri>
@@ -95,7 +103,9 @@
   import circleridge from 'raw-loader!./docs/circleridge.md';
   import dot from 'raw-loader!./docs/dot.md';
   import dotshrink from 'raw-loader!./docs/dotshrink.md';
+  import dotmoving from 'raw-loader!./docs/dotmoving.md';
   import dotsquare from 'raw-loader!./docs/dotsquare.md';
+  import dotsquareshrink from 'raw-loader!./docs/dotsquareshrink.md';
   import word from 'raw-loader!./docs/word.md';
   import wordcover from 'raw-loader!./docs/wordcover.md';
   import wordborderbounce from 'raw-loader!./docs/wordborderbounce.md';
@@ -122,7 +132,9 @@
           circleridge,
           dot,
           dotshrink,
+          dotmoving,
           dotsquare,
+          dotsquareshrink,
           word,
           wordcover,
           wordborderbounce
