@@ -1,7 +1,7 @@
 {
   "name": "vue-fun-loading",
   "description": "all kinds of loading components of vue",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "private": false,
   "main": "dist/vue-fun-loading.js",
@@ -25,6 +25,10 @@
     "blog",
     "guohongying"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OwnGhy/vue-fun-loading.git"
+  },
   "author": "OwnGhy <919986426@qq.com>",
   "devDependencies": {
     "babel-eslint": "^10.0.1",
