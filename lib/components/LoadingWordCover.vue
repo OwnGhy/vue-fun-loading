@@ -67,7 +67,6 @@
 
   .@{loading-class} {
     position: relative;
-    margin: 0 auto;
 
     &.@{loading-class}-small {
       width: 75px;

@@ -33,18 +33,54 @@
         />
         <vue-fun-loading
           slot="demo-5"
-          type="circle-quarter"
+          type="circle-half"
         />
         <vue-fun-loading
           slot="demo-6"
-          type="word"
+          type="circle-quarter"
         />
         <vue-fun-loading
           slot="demo-7"
-          type="word-cover"
+          type="circle-to-dot"
         />
         <vue-fun-loading
           slot="demo-8"
+          type="circle-to-dash"
+        />
+        <vue-fun-loading
+          slot="demo-9"
+          type="circle-ridge"
+        />
+        <vue-fun-loading
+          slot="demo-10"
+          type="dot"
+        />
+        <vue-fun-loading
+          slot="demo-11"
+          type="dot-shrink"
+        />
+        <vue-fun-loading
+          slot="demo-12"
+          type="dot-moving"
+        />
+        <vue-fun-loading
+          slot="demo-13"
+          type="dot-square"
+        />
+        <vue-fun-loading
+          slot="demo-14"
+          type="dot-square-shrink"
+        />
+        <vue-fun-loading
+          slot="demo-15"
+          type="word"
+        />
+        <vue-fun-loading
+          slot="demo-16"
+          type="word-cover"
+        />
+        <vue-fun-loading
+          slot="demo-17"
           type="word-border-bounce"
         />
       </juri>
@@ -56,11 +92,20 @@
   import Juri from 'vue-juri';
   import GithubCat from './GithubCat';
   import size from 'raw-loader!./docs/size.md';
+  import color from 'raw-loader!./docs/color.md';
   import circledotmoving from 'raw-loader!./docs/circledotmoving.md';
   import circlegradient from 'raw-loader!./docs/circlegradient.md';
   import circleline from 'raw-loader!./docs/circleline.md';
+  import circlehalf from 'raw-loader!./docs/circlehalf.md';
   import circlequarter from 'raw-loader!./docs/circlequarter.md';
-  import circledotcolor from 'raw-loader!./docs/circledotcolor.md';
+  import circletodot from 'raw-loader!./docs/circletodot.md';
+  import circletodash from 'raw-loader!./docs/circletodash.md';
+  import circleridge from 'raw-loader!./docs/circleridge.md';
+  import dot from 'raw-loader!./docs/dot.md';
+  import dotshrink from 'raw-loader!./docs/dotshrink.md';
+  import dotmoving from 'raw-loader!./docs/dotmoving.md';
+  import dotsquare from 'raw-loader!./docs/dotsquare.md';
+  import dotsquareshrink from 'raw-loader!./docs/dotsquareshrink.md';
   import word from 'raw-loader!./docs/word.md';
   import wordcover from 'raw-loader!./docs/wordcover.md';
   import wordborderbounce from 'raw-loader!./docs/wordborderbounce.md';
@@ -76,11 +121,20 @@
         expend: false,
         docList: [
           size,
-          circledotcolor,
+          color,
           circledotmoving,
           circlegradient,
           circleline,
+          circlehalf,
           circlequarter,
+          circletodot,
+          circletodash,
+          circleridge,
+          dot,
+          dotshrink,
+          dotmoving,
+          dotsquare,
+          dotsquareshrink,
           word,
           wordcover,
           wordborderbounce
