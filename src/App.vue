@@ -53,14 +53,26 @@
         />
         <vue-fun-loading
           slot="demo-10"
-          type="word"
+          type="dot"
         />
         <vue-fun-loading
           slot="demo-11"
-          type="word-cover"
+          type="dot-shrink"
         />
         <vue-fun-loading
           slot="demo-12"
+          type="dot-square"
+        />
+        <vue-fun-loading
+          slot="demo-13"
+          type="word"
+        />
+        <vue-fun-loading
+          slot="demo-14"
+          type="word-cover"
+        />
+        <vue-fun-loading
+          slot="demo-15"
           type="word-border-bounce"
         />
       </juri>
@@ -72,6 +84,7 @@
   import Juri from 'vue-juri';
   import GithubCat from './GithubCat';
   import size from 'raw-loader!./docs/size.md';
+  import color from 'raw-loader!./docs/color.md';
   import circledotmoving from 'raw-loader!./docs/circledotmoving.md';
   import circlegradient from 'raw-loader!./docs/circlegradient.md';
   import circleline from 'raw-loader!./docs/circleline.md';
@@ -80,7 +93,9 @@
   import circletodot from 'raw-loader!./docs/circletodot.md';
   import circletodash from 'raw-loader!./docs/circletodash.md';
   import circleridge from 'raw-loader!./docs/circleridge.md';
-  import circledotcolor from 'raw-loader!./docs/circledotcolor.md';
+  import dot from 'raw-loader!./docs/dot.md';
+  import dotshrink from 'raw-loader!./docs/dotshrink.md';
+  import dotsquare from 'raw-loader!./docs/dotsquare.md';
   import word from 'raw-loader!./docs/word.md';
   import wordcover from 'raw-loader!./docs/wordcover.md';
   import wordborderbounce from 'raw-loader!./docs/wordborderbounce.md';
@@ -96,7 +111,7 @@
         expend: false,
         docList: [
           size,
-          circledotcolor,
+          color,
           circledotmoving,
           circlegradient,
           circleline,
@@ -105,6 +120,9 @@
           circletodot,
           circletodash,
           circleridge,
+          dot,
+          dotshrink,
+          dotsquare,
           word,
           wordcover,
           wordborderbounce
