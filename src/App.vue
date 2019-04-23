@@ -83,6 +83,16 @@
           slot="demo-17"
           type="word-border-bounce"
         />
+        <vue-fun-loading
+          slot="demo-18"
+          size="small"
+          type="line"
+        />
+        <vue-fun-loading
+          slot="demo-19"
+          size="small"
+          type="line-base"
+        />
       </juri>
     </div>
   </div>
@@ -109,6 +119,8 @@
   import word from 'raw-loader!./docs/word.md';
   import wordcover from 'raw-loader!./docs/wordcover.md';
   import wordborderbounce from 'raw-loader!./docs/wordborderbounce.md';
+  import line from 'raw-loader!./docs/line.md';
+  import linebase from 'raw-loader!./docs/linebase.md';
 
   export default {
     name: 'vue-fun-loading-demo',
@@ -137,7 +149,9 @@
           dotsquareshrink,
           word,
           wordcover,
-          wordborderbounce
+          wordborderbounce,
+          line,
+          linebase
         ]
       };
     }

@@ -1,11 +1,11 @@
 <template>
-  <div :class="`fun-loading-line fun-loading-line-${size}`" :style="loadingStyle">
+  <div :class="`fun-loading-line-base fun-loading-line-base-${size}`" :style="loadingStyle">
     <span v-for="item in [1, 2, 3, 4, 5]" :key="item"></span>
   </div>
 </template>
 <script>
   export default {
-    name: 'FunLoadingLine',
+    name: 'FunLoadingLineBase',
     props: {
       size: {
         type: String,
@@ -29,12 +29,13 @@
 <style lang="less">
   @import "./style/_variables.less";
 
-  @loading-class: @{fun-loading-prefix}-line;
+  @loading-class: @{fun-loading-prefix}-line-base;
 
   .@{loading-class} {
     > span {
       display: inline-block;
       background: @fun-loading-color;
+      transform-origin: 0 100%;
       animation: line_scale 1s ease infinite;
 
       &:nth-child(2){
