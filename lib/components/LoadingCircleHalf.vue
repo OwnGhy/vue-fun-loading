@@ -18,7 +18,7 @@
     computed: {
       loadingStyle() {
         return {
-          // backgroundColor: this.color
+          borderColor: `${this.color} ${this.color} transparent transparent`
         };
       }
     }

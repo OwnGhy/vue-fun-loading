@@ -1,6 +1,6 @@
 <template>
-  <div :class="`fun-loading-dot-square-shrink fun-loading-dot-square-shrink-${size}`" :style="loadingStyle">
-    <span v-for="item in [1, 2, 3, 4, 5]" :key="item"></span>
+  <div :class="`fun-loading-dot-square-shrink fun-loading-dot-square-shrink-${size}`">
+    <span v-for="item in [1, 2, 3, 4, 5]" :key="item" :style="loadingStyle"></span>
   </div>
 </template>
 <script>
@@ -20,7 +20,7 @@
     computed: {
       loadingStyle() {
         return {
-          // backgroundColor: this.color
+          backgroundColor: this.color
         };
       }
     }
