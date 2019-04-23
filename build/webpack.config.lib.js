@@ -1,5 +1,4 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const config = {
@@ -7,16 +6,13 @@ const config = {
     entry: './lib/index.js',
     output: {
         filename: 'vue-fun-loading.js',
-        path: path.resolve(__dirname, './dist/')
+        path: path.resolve(__dirname, './../dist/')
     },
     module: {
         rules: [
             {
                 test: /\.vue$/,
-                loader: 'vue-loader',
-                options: {
-                    extractCSS: true
-                }
+                loader: 'vue-loader'
             },
             {
                 test: /\.css$/,
@@ -33,11 +29,13 @@ const config = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(),
-        new ExtractTextPlugin('style.[hash].css')
+        new CleanWebpackPlugin()
     ],
     resolve: {
-        extensions: ['*', '.js', '.vue', '.json']
+        extensions: ['*', '.js', '.vue', '.json'],
+        alias: {
+          'vue$': 'vue/dist/vue.esm.js'
+        }
     }
 };
 
