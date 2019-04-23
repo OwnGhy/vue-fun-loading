@@ -1,6 +1,6 @@
 <template>
-  <div :class="`fun-loading-line fun-loading-line-${size}`" :style="loadingStyle">
-    <span v-for="item in [1, 2, 3, 4, 5]" :key="item"></span>
+  <div :class="`fun-loading-line fun-loading-line-${size}`">
+    <span v-for="item in [1, 2, 3, 4, 5]" :key="item" :style="loadingStyle"></span>
   </div>
 </template>
 <script>
@@ -20,7 +20,7 @@
     computed: {
       loadingStyle() {
         return {
-          // backgroundColor: this.color
+          backgroundColor: this.color
         };
       }
     }
@@ -35,6 +35,7 @@
     > span {
       display: inline-block;
       background: @fun-loading-color;
+      margin-right: 2px;
       animation: line_scale 1s ease infinite;
 
       &:nth-child(2){
@@ -56,36 +57,33 @@
 
     &.@{loading-class}-small {
       > span {
-        display: inline-block;
         width: 4px;
         height: 20px;
         border-radius: 2px;
-        margin-right: 2px;
       }
     }
     &.@{loading-class}-middle {
       > span {
-        width: 6px;
-        height: 22px;
-        border-radius: 3px;
+        width: 5px;
+        height: 24px;
+        border-radius: 2.5px;
       }
     }
     &.@{loading-class}-large {
       > span {
-        width: 8px;
-        height: 24px;
-        border-radius: 4px;
+        width: 6px;
+        height: 28px;
+        border-radius: 3px;
       }
     }
 
     @keyframes line_scale {
       0%,100%{
         transform: scaleY(1);
-        background: @fun-loading-color;
       }
       50%{
-        transform: scaleY(1.5);
-        background: @fun-loading-light-color;
+        transform: scaleY(1.6);
+        filter: opacity(35%);
       }
     }
   }

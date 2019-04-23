@@ -18,7 +18,7 @@
     computed: {
       loadingStyle() {
         return {
-          // backgroundColor: this.color
+          color: this.color
         };
       }
     }
@@ -31,7 +31,7 @@
 
   .@{loading-class}:after {
     content: 'LOADING...';
-    color: @fun-loading-color;
+    color: inherit;
     font-family: helvetica, arial, sans-serif;
     position: absolute;
     width: 100%;
@@ -45,7 +45,7 @@
     content: "";
     position: absolute;
     left: 0;
-    background-color: @fun-loading-color;
+    background-color: currentColor;
     width: 0;
     z-index: 0;
     opacity: 1;
@@ -68,6 +68,7 @@
   .@{loading-class} {
     position: relative;
     margin: 0 auto;
+    color: @fun-loading-color;
 
     .@{loading-class}-small {
       width: 75px;

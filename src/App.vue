@@ -85,12 +85,10 @@
         />
         <vue-fun-loading
           slot="demo-18"
-          size="small"
           type="line"
         />
         <vue-fun-loading
           slot="demo-19"
-          size="small"
           type="line-base"
         />
       </juri>

@@ -2,6 +2,8 @@
   <div :class="`fun-loading-circle-ridge fun-loading-circle-ridge-${size}`" :style="loadingStyle"></div>
 </template>
 <script>
+  import { LightenDarkenColor } from './../utils';
+
   export default {
     name: 'FunLoadingCircleRidge',
     props: {
@@ -18,7 +20,7 @@
     computed: {
       loadingStyle() {
         return {
-          // backgroundColor: this.color
+          borderColor: `${LightenDarkenColor(this.color, 40)} ${this.color}`
         };
       }
     }
