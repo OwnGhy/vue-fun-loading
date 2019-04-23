@@ -6,7 +6,10 @@ const config = {
     entry: './lib/index.js',
     output: {
         filename: 'vue-fun-loading.js',
-        path: path.resolve(__dirname, './../dist/')
+        path: path.resolve(__dirname, './../dist/'),
+        library: 'VueFunLoading',
+        libraryTarget: 'umd',
+        umdNamedDefine: true
     },
     module: {
         rules: [
@@ -36,7 +39,8 @@ const config = {
         alias: {
           'vue$': 'vue/dist/vue.esm.js'
         }
-    }
+    },
+    devtool: '#eval-source-map'
 };
 
 
