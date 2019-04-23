@@ -1,11 +1,11 @@
 <template>
-  <div :class="`fun-loading-dot-shrink fun-loading-dot-shrink-${size}`">
+  <div :class="`fun-loading-line-base fun-loading-line-base-${size}`">
     <span v-for="item in [1, 2, 3, 4, 5]" :key="item" :style="loadingStyle"></span>
   </div>
 </template>
 <script>
   export default {
-    name: 'FunLoadingDotShrink',
+    name: 'FunLoadingLineBase',
     props: {
       size: {
         type: String,
@@ -29,31 +29,28 @@
 <style lang="less">
   @import "./style/_variables.less";
 
-  @loading-class: @{fun-loading-prefix}-dot-shrink;
+  @loading-class: @{fun-loading-prefix}-line-base;
 
   .@{loading-class} {
     > span {
       display: inline-block;
-      border-radius: 50%;
       background: @fun-loading-color;
-      animation: dot_opacity_shrink 1.04s ease infinite;
+      margin-right: 2px;
+      transform-origin: 0 100%;
+      animation: line_scale_base 1s ease infinite;
 
-      &:nth-child(1) {
-        animation-delay: .13s;
+      &:nth-child(2){
+        -webkit-animation-delay:0.2s;
       }
-      &:nth-child(2) {
-        animation-delay: .26s;
+      &:nth-child(3){
+        -webkit-animation-delay:0.4s;
       }
-      &:nth-child(3) {
-        animation-delay: .39s;
+      &:nth-child(4){
+        -webkit-animation-delay:0.6s;
       }
-      &:nth-child(4) {
-        animation-delay: .52s;
+      &:nth-child(5){
+        -webkit-animation-delay:0.8s;
       }
-      &:nth-child(5) {
-        animation-delay: .65s;
-      }
-
       &:last-child {
         margin-right: 0;
       }
@@ -61,37 +58,33 @@
 
     &.@{loading-class}-small {
       > span {
-        width: 6px;
-        height: 6px;
-        margin-right: 3px;
+        width: 4px;
+        height: 20px;
+        border-radius: 2px;
       }
     }
-
     &.@{loading-class}-middle {
       > span {
-        width: 8px;
-        height: 8px;
-        margin-right: 4px;
+        width: 5px;
+        height: 24px;
+        border-radius: 2.5px;
       }
     }
-
     &.@{loading-class}-large {
       > span {
-        width: 10px;
-        height: 10px;
-        margin-right: 5px;
+        width: 6px;
+        height: 28px;
+        border-radius: 3px;
       }
     }
 
-
-    @keyframes dot_opacity_shrink {
-      0%{
-        opacity: 1;
-        transform: scale(1);
+    @keyframes line_scale_base {
+      0%,100%{
+        transform: scaleY(1);
       }
-      100%{
-        opacity: 0;
-        transform: scale(.3);
+      50%{
+        transform: scaleY(1.6);
+        filter: opacity(35%);
       }
     }
   }

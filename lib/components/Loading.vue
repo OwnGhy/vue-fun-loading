@@ -23,6 +23,8 @@ import LoadingDotSquareShrink from './LoadingDotSquareShrink';
 import LoadingWord from './LoadingWord';
 import LoadingWordCover from './LoadingWordCover';
 import LoadingWordBorderBounce from './LoadingWordBorderBounce';
+import LoadingLine from './LoadingLine';
+import LoadingLineBase from './LoadingLineBase';
 
 export default {
     name: 'VueFunLoading',
@@ -43,7 +45,9 @@ export default {
         LoadingDotSquareShrink,
         LoadingWord,
         LoadingWordCover,
-        LoadingWordBorderBounce
+        LoadingWordBorderBounce,
+        LoadingLine,
+        LoadingLineBase
     },
     props: {
         size: {
@@ -74,7 +78,9 @@ export default {
               'circle-line',
               'word',
               'word-cover',
-              'word-border-bounce'
+              'word-border-bounce',
+              'line',
+              'line-base'
             ]
         }
     },
