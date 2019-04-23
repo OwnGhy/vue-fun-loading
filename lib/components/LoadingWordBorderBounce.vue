@@ -18,7 +18,7 @@
     computed: {
       loadingStyle() {
         return {
-          // backgroundColor: this.color
+          color: this.color
         };
       }
     }
@@ -91,7 +91,7 @@
     &::before, &::after {
       content: "";
       display: block;
-      background: @fun-loading-color;
+      background: currentColor;
       position: absolute;
     }
     &::before {

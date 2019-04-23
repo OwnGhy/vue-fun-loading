@@ -1,11 +1,11 @@
 ---
-title: dot-square-shrink
-desc: loading type of dot-square-shrink.
+title: line-base
+desc: loading type of line-base.
 ---
 
 ```vue
 <template>
-  <vue-fun-loading type="dot-square-shrink" />
+  <vue-fun-loading type="line-base" />
 </template>
 
 <script>
