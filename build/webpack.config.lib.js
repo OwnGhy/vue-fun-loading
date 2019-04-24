@@ -40,6 +40,9 @@ const config = {
           'vue$': 'vue/dist/vue.esm.js'
         }
     },
+    externals: {
+      'vue': 'vue'
+    },
     devtool: '#eval-source-map'
 };
 
