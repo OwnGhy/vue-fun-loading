@@ -37,58 +37,62 @@
         />
         <vue-fun-loading
           slot="demo-6"
-          type="circle-quarter"
+          type="circle-casual"
         />
         <vue-fun-loading
           slot="demo-7"
-          type="circle-to-dot"
+          type="circle-quarter"
         />
         <vue-fun-loading
           slot="demo-8"
-          type="circle-to-dash"
+          type="circle-to-dot"
         />
         <vue-fun-loading
           slot="demo-9"
-          type="circle-ridge"
+          type="circle-to-dash"
         />
         <vue-fun-loading
           slot="demo-10"
-          type="dot"
+          type="circle-ridge"
         />
         <vue-fun-loading
           slot="demo-11"
-          type="dot-shrink"
+          type="dot"
         />
         <vue-fun-loading
           slot="demo-12"
-          type="dot-moving"
+          type="dot-shrink"
         />
         <vue-fun-loading
           slot="demo-13"
-          type="dot-square"
+          type="dot-moving"
         />
         <vue-fun-loading
           slot="demo-14"
-          type="dot-square-shrink"
+          type="dot-square"
         />
         <vue-fun-loading
           slot="demo-15"
-          type="word"
+          type="dot-square-shrink"
         />
         <vue-fun-loading
           slot="demo-16"
-          type="word-cover"
+          type="word"
         />
         <vue-fun-loading
           slot="demo-17"
-          type="word-border-bounce"
+          type="word-cover"
         />
         <vue-fun-loading
           slot="demo-18"
-          type="line"
+          type="word-border-bounce"
         />
         <vue-fun-loading
           slot="demo-19"
+          type="line"
+        />
+        <vue-fun-loading
+          slot="demo-20"
           type="line-base"
         />
       </juri>
@@ -105,6 +109,7 @@
   import circlegradient from 'raw-loader!./docs/circlegradient.md';
   import circleline from 'raw-loader!./docs/circleline.md';
   import circlehalf from 'raw-loader!./docs/circlehalf.md';
+  import circlecasual from 'raw-loader!./docs/circlecasual.md';
   import circlequarter from 'raw-loader!./docs/circlequarter.md';
   import circletodot from 'raw-loader!./docs/circletodot.md';
   import circletodash from 'raw-loader!./docs/circletodash.md';
@@ -136,6 +141,7 @@
           circlegradient,
           circleline,
           circlehalf,
+          circlecasual,
           circlequarter,
           circletodot,
           circletodash,
