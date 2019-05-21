@@ -45,7 +45,7 @@
         } else if (this.size === 'middle') {
           return 17;
         } else {
-          return 26;
+          return 25;
         }
       }
     }
@@ -61,33 +61,51 @@
     &.@{loading-class}-small {
       width: @small;
       height: @small;
+      circle {
+        animation: 4s dash_animation_small infinite, 4s offset_animation infinite;
+      }
     }
 
     &.@{loading-class}-middle {
       width: @middle;
       height: @middle;
+      circle {
+        animation: 4s dash_animation_middle infinite, 4s offset_animation infinite;
+      }
     }
 
     &.@{loading-class}-large {
       width: @large;
       height: @large;
+      circle {
+        animation: 4s dash_animation_large infinite, 4s offset_animation infinite;
+      }
     }
   }
-  circle {
-    animation: 4s a infinite, 4s o infinite;
-  }
-  @keyframes a {
+
+  .dash_common_keyframes(@len) {
     from {
-      stroke-dasharray: 100, 0;
+      stroke-dasharray: @len, 0;
     }
     50% {
-      stroke-dasharray: 0, 100;
+      stroke-dasharray: 0, @len;
     }
     to {
-      stroke-dasharray: 100, 0;
+      stroke-dasharray: @len, 0;
     }
   }
-  @keyframes o {
+
+  @keyframes dash_animation_small {
+    .dash_common_keyframes(45);
+  }
+  @keyframes dash_animation_middle {
+    .dash_common_keyframes(100);
+  }
+  @keyframes dash_animation_large {
+    .dash_common_keyframes(150);
+  }
+
+  @keyframes offset_animation {
     from {
       stroke-dashoffset: 75%;
     }
