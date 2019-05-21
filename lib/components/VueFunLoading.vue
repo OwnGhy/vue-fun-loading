@@ -11,6 +11,7 @@ import LoadingCircleDotMoving from './LoadingCircleDotMoving';
 import LoadingCircleGradient from './LoadingCircleGradient';
 import LoadingCircleLine from './LoadingCircleLine';
 import LoadingCircleHalf from './LoadingCircleHalf';
+import LoadingCircleCasual from './LoadingCircleCasual';
 import LoadingCircleQuarter from './LoadingCircleQuarter';
 import LoadingCircleToDot from './LoadingCircleToDot';
 import LoadingCircleToDash from './LoadingCircleToDash';
@@ -34,6 +35,7 @@ export default {
         LoadingCircleGradient,
         LoadingCircleLine,
         LoadingCircleHalf,
+        LoadingCircleCasual,
         LoadingCircleQuarter,
         LoadingCircleToDot,
         LoadingCircleToDash,
@@ -68,6 +70,7 @@ export default {
               'circle-to-dot',
               'circle-to-dash',
               'circle-ridge',
+              'circle-casual',
               'dot',
               'dot-shrink',
               'dot-moving',
@@ -86,8 +89,13 @@ export default {
     },
     methods: {
         firstLetterUppercase (text) {
-            const letterArr = text.split('');
-            letterArr[0] = letterArr[0].toUpperCase();
+            const letterArr = text.split('-'),
+              len = letterArr.length;
+            for(let i = 0; i < len; i++) {
+              let letter = letterArr[i].split('');
+              letter[0] = letter[0].toUpperCase();
+              letterArr[i] = letter.join('');
+            }
             return letterArr.join('');
         }
     }
