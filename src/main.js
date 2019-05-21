@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
-import VueFunLoading from './../dist/vue-fun-loading.js';
+import VueFunLoading from './../lib/index';
 
 Vue.use(VueFunLoading);
 
